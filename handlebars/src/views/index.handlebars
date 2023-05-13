@@ -1,0 +1,17 @@
+<div>
+
+  {{#if isAdmin}}
+    <h1 class='titulo'>Lista de usuarios</h1>
+
+    {{#each users}}
+      <h1>{{this.name}}</h1>
+      <h1>{{this.age}}</h1>
+    {{/each}}
+    <hr />
+    <img src='1.jpeg' alt='' />
+
+  {{else}}
+    <p>No tienes permiso para ver la lista</p>
+  {{/if}}
+
+</div>
